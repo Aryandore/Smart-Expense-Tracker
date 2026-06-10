@@ -141,58 +141,7 @@ A modern, full-stack web application for intelligent personal finance management
 
 ## 🚢 Deployment
 
-### Deploy to Heroku
 
-1. **Install Heroku CLI**
-   ```bash
-   # Visit https://devcenter.heroku.com/articles/heroku-cli
-   ```
-
-2. **Create Procfile**
-   ```
-   web: python run.py
-   ```
-
-3. **Create requirements.txt**
-   ```bash
-   pip freeze > requirements.txt
-   ```
-
-4. **Deploy**
-   ```bash
-   heroku login
-   heroku create your-app-name
-   git push heroku main
-   heroku config:set GROQ_API_KEY=your-key-here
-   ```
-
-### Deploy to Azure
-
-1. **Create Azure App Service**
-   ```bash
-   az appservice plan create --name myPlan --sku B1
-   az webapp create --resource-group myGroup --plan myPlan --name myApp --runtime "PYTHON|3.9"
-   ```
-
-2. **Deploy with Git**
-   ```bash
-   git remote add azure https://your-azure-url.git
-   git push azure main
-   ```
-
-### Deploy to PythonAnywhere
-
-1. **Upload code** to PythonAnywhere
-2. **Configure web app** with Flask settings
-3. **Set environment variables** in Web settings
-4. **Reload** the web app
-
-### Deploy to Render
-
-1. **Push code to GitHub**
-2. **Connect GitHub repo** to Render
-3. **Set environment variables**
-4. **Deploy** automatically
 
 ## 🔐 Security Considerations
 
