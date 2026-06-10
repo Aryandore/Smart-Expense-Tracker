@@ -5,3 +5,4 @@ python-dotenv==1.2.2
 requests==2.34.2
 groq==1.4.0
 sqlalchemy==2.0.50
+gunicorn==21.2.0
