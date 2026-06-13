@@ -10,11 +10,11 @@ import sys
 import csv
 from io import StringIO
 
+
 # Add parent directory to path
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
-from backend.app import db, Transaction, MonthlyBudget
-import config
+from backend.models import db, Transaction, MonthlyBudget
+import backend.config as config
 
 api_bp = Blueprint('api', __name__, url_prefix='/api')
 
